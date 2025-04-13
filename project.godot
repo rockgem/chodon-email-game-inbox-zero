@@ -11,14 +11,28 @@ config_version=5
 [application]
 
 config/name="inbox zero"
+run/main_scene="uid://dxgwfsnvwuvui"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=896
+window/size/viewport_height=504
+window/size/window_width_override=1152
+window/size/window_height_override=648
+window/stretch/mode="canvas_items"
 
 [editor]
 
 naming/scene_name_casing=1
 naming/script_name_casing=1
 
+[gui]
+
+theme/custom="uid://bgmbdw1tx5p6x"
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"

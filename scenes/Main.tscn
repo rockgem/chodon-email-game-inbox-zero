@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxgwfsnvwuvui"]
+[gd_scene load_steps=3 format=3 uid="uid://dxgwfsnvwuvui"]
 
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
+[ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -10,3 +11,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_elqb8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+offset_left = 33.0
+offset_top = 24.0
+offset_right = 470.0
+offset_bottom = 379.0
+theme_override_styles/panel = ExtResource("2_rvslj")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 43.0
+offset_right = 114.0
+offset_bottom = 74.0
+text = "Inbox"
