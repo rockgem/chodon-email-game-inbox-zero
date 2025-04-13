@@ -3,4 +3,10 @@ extends Control
 
 
 func _ready() -> void:
-	pass
+	ManagerGame.pop_to_ui.connect(on_pop_to_ui)
+
+
+
+func on_pop_to_ui(instance):
+	
+	$Popup.add_child(instance)

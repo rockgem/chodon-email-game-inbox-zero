@@ -15,6 +15,10 @@ run/main_scene="uid://dxgwfsnvwuvui"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ManagerGame="*res://globals/ManagerGame.tscn"
+
 [display]
 
 window/size/viewport_width=896
