@@ -1,0 +1,15 @@
+{
+	"day_1": [
+		{
+			"sender_email": "evil@gmail.com",
+			"sender_name": "evil G.",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Title Header",
+			"body": "hello message",
+			"date": "1/1/10",
+			"type": "cult",
+			"responses": ["Ignore", "Reply", "Delete"]
+		}
+	]
+}
