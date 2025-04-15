@@ -44,16 +44,19 @@ offset_bottom = 79.0
 [node name="Inbox" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 text = "Inbox"
 
 [node name="Sent" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 text = "Sent"
 
 [node name="Drafts" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 text = "Drafts"
 
 [node name="Panel" type="Panel" parent="InboxPanel"]
@@ -122,38 +125,36 @@ offset_bottom = -12.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Stats/VBoxContainer"]
+[node name="Sanity" type="HBoxContainer" parent="Stats/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Stats/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Stats/VBoxContainer/Sanity"]
 custom_minimum_size = Vector2(88, 0)
 layout_mode = 2
 text = "Sanity"
 
-[node name="ProgressBar" type="ProgressBar" parent="Stats/VBoxContainer/HBoxContainer"]
+[node name="ProgressBar" type="ProgressBar" parent="Stats/VBoxContainer/Sanity"]
 custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_styles/background = ExtResource("3_rarhs")
 theme_override_styles/fill = SubResource("StyleBoxTexture_nxtc6")
-value = 40.0
 show_percentage = false
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Stats/VBoxContainer"]
+[node name="JS" type="HBoxContainer" parent="Stats/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Stats/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="Stats/VBoxContainer/JS"]
 custom_minimum_size = Vector2(88, 0)
 layout_mode = 2
 text = "Job Security"
 
-[node name="ProgressBar" type="ProgressBar" parent="Stats/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="Stats/VBoxContainer/JS"]
 custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_styles/background = ExtResource("3_rarhs")
 theme_override_styles/fill = SubResource("StyleBoxTexture_nxtc6")
-value = 40.0
 show_percentage = false

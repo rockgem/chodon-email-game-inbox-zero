@@ -13,12 +13,18 @@ func _ready() -> void:
 
 
 func _on_delete_pressed() -> void:
-	pass # Replace with function body.
+	data['status'] = 'deleted'
+	
+	queue_free()
 
 
 func _on_ignore_pressed() -> void:
-	pass # Replace with function body.
+	data['status'] = 'ignored'
+	
+	queue_free()
 
 
 func _on_reply_pressed() -> void:
-	pass # Replace with function body.
+	data['status'] = 'replied'
+	
+	queue_free()

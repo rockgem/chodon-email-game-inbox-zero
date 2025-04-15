@@ -13,6 +13,11 @@ func _ready() -> void:
 	load_day_emails()
 
 
+func _physics_process(delta: float) -> void:
+	$Stats/VBoxContainer/Sanity/ProgressBar.value = sanity
+	$Stats/VBoxContainer/JS/ProgressBar.value = job_security
+
+
 func refresh_emails_display():
 	for child in $InboxPanel/Panel/ScrollContainer/List.get_children():
 		child.queue_free()
