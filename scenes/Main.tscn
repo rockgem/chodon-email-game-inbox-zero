@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxgwfsnvwuvui"]
+[gd_scene load_steps=7 format=3 uid="uid://dxgwfsnvwuvui"]
 
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
 [ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="3_rarhs"]
+[ext_resource type="PackedScene" uid="uid://bamvgem051wi0" path="res://actors/PreviewBox.tscn" id="4_c01mt"]
 [ext_resource type="Texture2D" uid="uid://ctloil85gcweg" path="res://art/Windows_Progress_Fill.png" id="4_vcsgt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nxtc6"]
@@ -54,6 +55,52 @@ text = "Sent"
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Drafts"
+
+[node name="Panel" type="Panel" parent="InboxPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.206
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 10.098
+offset_right = -16.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("3_rarhs")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="InboxPanel/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 12.0
+offset_right = -13.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="List" type="VBoxContainer" parent="InboxPanel/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="PreviewBox" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
+layout_mode = 2
+
+[node name="PreviewBox2" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
+layout_mode = 2
+
+[node name="PreviewBox3" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
+layout_mode = 2
+
+[node name="PreviewBox4" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
+layout_mode = 2
+
+[node name="PreviewBox5" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
+layout_mode = 2
 
 [node name="Stats" type="Panel" parent="."]
 layout_mode = 1

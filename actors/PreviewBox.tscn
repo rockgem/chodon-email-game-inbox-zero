@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://bamvgem051wi0"]
+
+[ext_resource type="FontFile" uid="uid://dnwcl27frp64j" path="res://reso/styles/IBMPlexMono-Bold.ttf" id="1_4gljl"]
+[ext_resource type="Script" uid="uid://dwxpfx1cu5bmq" path="res://actors/PreviewBox.gd" id="1_cgrr1"]
+
+[node name="PreviewBox" type="HBoxContainer"]
+offset_right = 363.0
+offset_bottom = 17.0
+script = ExtResource("1_cgrr1")
+
+[node name="SenderName" type="Label" parent="."]
+custom_minimum_size = Vector2(88, 0)
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("1_4gljl")
+text = "Gabriel W."
+text_overrun_behavior = 3
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 2
+
+[node name="Body" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("1_4gljl")
+text = "You have unread messages for Fix 2d mobile sidescroller game Project Issues in Godot Gabriel R."
+text_overrun_behavior = 3
+
+[connection signal="gui_input" from="SenderName" to="." method="_on_sender_name_gui_input"]
+[connection signal="gui_input" from="Body" to="." method="_on_sender_name_gui_input"]

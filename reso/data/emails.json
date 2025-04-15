@@ -1,15 +1,43 @@
 {
 	"day_1": [
 		{
-			"sender_email": "evil@gmail.com",
-			"sender_name": "evil G.",
+			"sender_email": "unicats@gmail.com",
+			"sender_name": "Uni Cats Inc.",
 			"to": "rock@gmail.com",
 			"to_name": "Rock G.",
-			"subject": "Title Header",
-			"body": "hello message",
-			"date": "1/1/10",
-			"type": "cult",
-			"responses": ["Ignore", "Reply", "Delete"]
+			"subject": "Free Cats (URGENT)",
+			"body": "Dear Human, My 27 cats have unionized and demand more treats. I need to rehome them ASAP. They’re fluent in Morse code and hate Mondays. Please adopt at least five. No returns. — Desperately Yours, Linda",
+			"date": "2/1/10",
+			"type": "",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "runescape@gmail.com",
+			"sender_name": "Runescape",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Quest Invitation: The Orb of Eternity",
+			"body": "Brave Adventurer, The Guild of Arcane Light needs YOU to retrieve the stolen Orb from the Lich King’s fortress. Reward: 10,000 gold + immortality (terms apply). Reply ‘YES’ to accept. Warning: May involve dragons.",
+			"date": "2/1/10",
+			"type": "",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Mandatory Meeting: Project Brainstorming",
+			"body": "You are invited to the meeting this 2PM, located in the southwing building hall 4H 21st floor.",
+			"date": "2/1/10",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
 		}
+	],
+	"day_2": [
+		
 	]
 }
