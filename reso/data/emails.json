@@ -9,8 +9,7 @@
 			"body": "You are invited to the meeting this 2PM, located in the southwing building hall 4H 21st floor.",
 			"date": "Feb 2, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "diego@companyhr.com",
@@ -21,8 +20,7 @@
 			"body": "An employee has reported that someone has been stealing their sandwich, they have approached the HR and requested whoever is stealing their tuna sandwich with spicy garlic sauce to stop what they are doing!",
 			"date": "Feb 2, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheenajane@companyhr.com",
@@ -33,8 +31,7 @@
 			"body": "As a loving member of the company, we are happy to announce that a new benefit has been implemented, UNLIMITED coffee refills! now you can enjoy working more hours and make your overtime shifts a little bit easier.",
 			"date": "Feb. 2, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheenajane@companyhr.com",
@@ -45,8 +42,7 @@
 			"body": "Coming from the HR, we are glad to have you on the company! We hope you get comfortable in your new working environment. A employee access ID card will be sent to you soon so you can be able to access the cafeteria.",
 			"date": "Feb. 2, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		}
 	],
 	"day_2": [
@@ -59,8 +55,7 @@
 			"body": "Dear Human, My 27 cats have unionized and demand more treats. I need to rehome them ASAP. They’re fluent in Morse code and hate Mondays. Please adopt at least five. No returns. — Desperately Yours, Linda",
 			"date": "Feb 2, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "runescape@gmail.com",
@@ -71,8 +66,7 @@
 			"body": "Brave Adventurer, The Guild of Arcane Light needs YOU to retrieve the stolen Orb from the Lich King’s fortress. Reward: 10,000 gold + immortality (terms apply). Reply ‘YES’ to accept. Warning: May involve dragons.",
 			"date": "Feb 2, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheenajane@companyhr.com",
@@ -83,8 +77,7 @@
 			"body": "We will be conducting our daily meetup at 2PM 21st floor, hall 4H, see you there.",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "diego@companyhr.com",
@@ -95,8 +88,7 @@
 			"body": "It turns out that our previous release of our product had critical bugs that makes it unusable, all engineers are scheduled for a zoom meeting 8:00 PM.",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "diego@companyhr.com",
@@ -107,8 +99,7 @@
 			"body": "Some of our engineers in the team had pushed some code that are not compliant with our standards, please reply to this email if you have concerns about the rules thank you!",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "user1299092@hotmail.com",
@@ -119,8 +110,7 @@
 			"body": "I found your email carved into my wall this morning. You need to leave town NOW. The shadows aren’t shadows. Don’t trust the man with no face. Burn this message.— [REDACTED]",
 			"date": "Feb. 3, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheenajane@companyhr.com",
@@ -131,8 +121,7 @@
 			"body": "Spam e-mails has been much of a concern lately, it started around last week and nobody knows how spammers got the company's personal emails. Please be careful in reading and interacting with such spams as it may cause trouble.",
 			"date": "Feb. 3, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		}
 	],
 	"day_3": [
@@ -145,8 +134,7 @@
 			"body": "Hi, This is your final warning! Your toaster (model: TX-9000) will self-destruct in 24 hours unless you renew its warranty. Click here to pay $999.99. Seriously, it’s flammable.",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "user444777@gmail.com",
@@ -157,8 +145,7 @@
 			"body": "Greetings! We are the Zorblaxians. Our spaceship crashed in your ‘Nevada Desert.’ Can you bring us 3 AAA batteries and a lasagna? Do not alert your ‘government.’ Thank you. — Glorp (Sent via iPhone 27)",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheenajane@companyhr.com",
@@ -169,8 +156,7 @@
 			"body": "Daily meeting conducting at 2PM, 21st floor. See you there!",
 			"date": "Feb. 4, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "sheena666@gmail.com",
@@ -181,8 +167,7 @@
 			"body": "You must come to room 13th on the 31st floor at exactly 4:16PM. You must come alone. DO NOT bring anyone else.",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			
-			"effect_script": ""
+			"effect_script": []
 		},
 		{
 			"sender_email": "diego@companyhr.com",
@@ -193,8 +178,7 @@
 			"body": "[NOTICE] It has come to our attention that fake emails has been sent to almost all of our employees, please be aware and read the sender's e-mail address carefully before interacting with such potentially harmful letters.",
 			"date": "Feb. 4, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
 		}
 	],
 	"day_4": [
@@ -207,8 +191,100 @@
 			"body": "Hey! This is Menna from the Art Department. We were given instructions to collaborate closely with the Engineering Department for the upcoming tasks. Reply to this email to give us the go signal to start! Thanks.",
 			"date": "Feb. 5, 2010",
 			"type": "company",
-			
-			"effect_script": ""
+			"effect_script": []
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Collab with the Art Deparment",
+			"body": "Good Morning! You must have received an e-mail from the Art Department by now. From now on, they will be working closely with the Engineering Team to ensure quality of the products we launch. Reply to this e-mail to confirm",
+			"date": "Feb. 5, 2010",
+			"type": "company",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
+		},
+		{
+			"sender_email": "anon_221@newmail.com",
+			"sender_name": "Anonymous",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "URGENT: Steal the Donut Recipe",
+			"body": "We’ll pay $1 million if you infiltrate Dunkin’ HQ and retrieve the ‘Unicorn Sprinkles’ blueprint. Disguise yourself as a janitor. Reply ‘I LOVE COFFEE’ to confirm.",
+			"date": "Feb. 5, 2010",
+			"type": "etc",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
+		},
+		{
+			"sender_email": "andycruz@company.com",
+			"sender_name": "Andy Cruz",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "I NEED HELP!",
+			"body": "Hey man, this is your coworker Andy, we have worked on the same tasks this week and I just wanted you to know that I am having a hard time finishing up this one feature can you help me?",
+			"date": "Feb. 5, 2010",
+			"type": "etc",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
+		},
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "UPDATE ON MISSING SANDWICH",
+			"body": "For the last few days, we have secretly put a security camera near the fridge and found out who was taking Andy's Tuna Sandwiches. They have been suspended for an indefinite time.",
+			"date": "Feb. 5, 2010",
+			"type": "etc",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
+		},
+		{
+			"sender_email": "desire454@hotmail.com",
+			"sender_name": "Anonymous",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "do not delete this email",
+			"body": "you have been warned, this is my final warning. what you are seeing is not real!",
+			"date": "Feb. 5, 2010",
+			"type": "etc",
+			"on_delete": ["run_script", "res://reso/action_scripts/sc_1.tscn"],
+			"on_ignore": [],
+			"on_reply": [],
+		}
+	],
+	"day_5": [
+		{
+			"sender_email": "sheena@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Meeting at 2PM 21st floor room 6th",
+			"body": "Weekly check-in meeting with the whole team. See you there! P.S. DO NOT go to 31st floor. its under renovation.",
+			"date": "Feb. 6, 2010",
+			"type": "etc",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
+		},
+		{
+			"sender_email": "sheena@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Hey",
+			"body": "Hey, I know you are new here and we never really met each other personally, but we can assure you that we are real, its silly but I just thought you are doubting we aren't. Not because we are not but because we ARE! haha that's about it, enjoy your day!",
+			"date": "Feb. 6, 2010",
+			"type": "etc",
+			"on_delete": [],
+			"on_ignore": [],
+			"on_reply": [],
 		}
 	]
 }

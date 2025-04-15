@@ -7,7 +7,7 @@ signal next_day_activated
 
 var emails_data = {}
 
-
+var global_main_ref = null
 
 func _ready() -> void:
 	emails_data = get_data("res://reso/data/emails.json")

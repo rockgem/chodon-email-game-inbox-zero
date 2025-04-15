@@ -10,6 +10,8 @@ var sanity = 100.0
 func _ready() -> void:
 	ManagerGame.pop_to_ui.connect(on_pop_to_ui)
 	
+	ManagerGame.global_main_ref = self
+	
 	load_day_emails()
 
 

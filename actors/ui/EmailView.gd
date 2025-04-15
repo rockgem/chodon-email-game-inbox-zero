@@ -15,6 +15,19 @@ func _ready() -> void:
 func _on_delete_pressed() -> void:
 	data['status'] = 'deleted'
 	
+	# check if it has a on_delete flag
+	if data.has('on_delete'):
+		match data['on_delete'][0]:
+			'run_script':
+				var sc = load(data['on_delete'][1]).instantiate()
+				add_child(sc)
+				
+				ManagerGame.global_main_ref.refresh_emails_display()
+			'add_sanity': pass
+			'reduce_sanity': pass
+			'add_security': pass
+			'reduce_security': pass
+	
 	var i = load('res://actors/ui/MessageDeletedPopup.tscn').instantiate()
 	ManagerGame.pop_to_ui.emit(i)
 	
