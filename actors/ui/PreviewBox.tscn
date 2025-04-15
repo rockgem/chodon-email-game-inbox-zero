@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bamvgem051wi0"]
 
 [ext_resource type="FontFile" uid="uid://dnwcl27frp64j" path="res://reso/styles/IBMPlexMono-Bold.ttf" id="1_4gljl"]
-[ext_resource type="Script" uid="uid://dwxpfx1cu5bmq" path="res://actors/PreviewBox.gd" id="1_cgrr1"]
+[ext_resource type="Script" uid="uid://dwxpfx1cu5bmq" path="res://actors/ui/PreviewBox.gd" id="1_cgrr1"]
 
 [node name="PreviewBox" type="HBoxContainer"]
 offset_right = 363.0

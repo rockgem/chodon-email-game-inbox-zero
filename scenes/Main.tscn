@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
 [ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="3_rarhs"]
-[ext_resource type="PackedScene" uid="uid://bamvgem051wi0" path="res://actors/PreviewBox.tscn" id="4_c01mt"]
+[ext_resource type="PackedScene" uid="uid://bamvgem051wi0" path="res://actors/ui/PreviewBox.tscn" id="4_c01mt"]
 [ext_resource type="Texture2D" uid="uid://ctloil85gcweg" path="res://art/Windows_Progress_Fill.png" id="4_vcsgt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nxtc6"]

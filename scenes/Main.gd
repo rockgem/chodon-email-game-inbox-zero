@@ -18,7 +18,7 @@ func refresh_emails_display():
 		child.queue_free()
 	
 	for email in emails:
-		var i = load('res://actors/PreviewBox.tscn').instantiate()
+		var i = load('res://actors/ui/PreviewBox.tscn').instantiate()
 		i.data = email
 		i.get_node('SenderName').text = email['sender_name']
 		i.get_node('Body').text = email['body']
