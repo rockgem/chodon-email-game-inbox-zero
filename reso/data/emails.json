@@ -9,7 +9,7 @@
 			"body": "You are invited to the meeting this 2PM, located in the southwing building hall 4H 21st floor.",
 			"date": "Feb 2, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -21,7 +21,7 @@
 			"body": "An employee has reported that someone has been stealing their sandwich, they have approached the HR and requested whoever is stealing their tuna sandwich with spicy garlic sauce to stop what they are doing!",
 			"date": "Feb 2, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -33,7 +33,7 @@
 			"body": "As a loving member of the company, we are happy to announce that a new benefit has been implemented, UNLIMITED coffee refills! now you can enjoy working more hours and make your overtime shifts a little bit easier.",
 			"date": "Feb. 2, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -45,7 +45,7 @@
 			"body": "Coming from the HR, we are glad to have you on the company! We hope you get comfortable in your new working environment. A employee access ID card will be sent to you soon so you can be able to access the cafeteria.",
 			"date": "Feb. 2, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		}
 	],
@@ -59,7 +59,7 @@
 			"body": "Dear Human, My 27 cats have unionized and demand more treats. I need to rehome them ASAP. They’re fluent in Morse code and hate Mondays. Please adopt at least five. No returns. — Desperately Yours, Linda",
 			"date": "Feb 2, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -71,7 +71,7 @@
 			"body": "Brave Adventurer, The Guild of Arcane Light needs YOU to retrieve the stolen Orb from the Lich King’s fortress. Reward: 10,000 gold + immortality (terms apply). Reply ‘YES’ to accept. Warning: May involve dragons.",
 			"date": "Feb 2, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -83,7 +83,7 @@
 			"body": "We will be conducting our daily meetup at 2PM 21st floor, hall 4H, see you there.",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -95,7 +95,7 @@
 			"body": "It turns out that our previous release of our product had critical bugs that makes it unusable, all engineers are scheduled for a zoom meeting 8:00 PM.",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -107,7 +107,7 @@
 			"body": "Some of our engineers in the team had pushed some code that are not compliant with our standards, please reply to this email if you have concerns about the rules thank you!",
 			"date": "Feb. 3, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -119,7 +119,7 @@
 			"body": "I found your email carved into my wall this morning. You need to leave town NOW. The shadows aren’t shadows. Don’t trust the man with no face. Burn this message.— [REDACTED]",
 			"date": "Feb. 3, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -131,7 +131,7 @@
 			"body": "Spam e-mails has been much of a concern lately, it started around last week and nobody knows how spammers got the company's personal emails. Please be careful in reading and interacting with such spams as it may cause trouble.",
 			"date": "Feb. 3, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		}
 	],
@@ -145,7 +145,7 @@
 			"body": "Hi, This is your final warning! Your toaster (model: TX-9000) will self-destruct in 24 hours unless you renew its warranty. Click here to pay $999.99. Seriously, it’s flammable.",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -157,7 +157,7 @@
 			"body": "Greetings! We are the Zorblaxians. Our spaceship crashed in your ‘Nevada Desert.’ Can you bring us 3 AAA batteries and a lasagna? Do not alert your ‘government.’ Thank you. — Glorp (Sent via iPhone 27)",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -169,7 +169,7 @@
 			"body": "Daily meeting conducting at 2PM, 21st floor. See you there!",
 			"date": "Feb. 4, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -181,7 +181,7 @@
 			"body": "You must come to room 13th on the 31st floor at exactly 4:16PM. You must come alone. DO NOT bring anyone else.",
 			"date": "Feb. 4, 2010",
 			"type": "etc",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
 			"effect_script": ""
 		},
 		{
@@ -193,7 +193,21 @@
 			"body": "[NOTICE] It has come to our attention that fake emails has been sent to almost all of our employees, please be aware and read the sender's e-mail address carefully before interacting with such potentially harmful letters.",
 			"date": "Feb. 4, 2010",
 			"type": "company",
-			"responses": ["Ignore", "Reply", "Delete"],
+			
+			"effect_script": ""
+		}
+	],
+	"day_4": [
+		{
+			"sender_email": "menna@artdeparment.com",
+			"sender_name": "Menna Mahmoud",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Art Department Collaboration",
+			"body": "Hey! This is Menna from the Art Department. We were given instructions to collaborate closely with the Engineering Department for the upcoming tasks. Reply to this email to give us the go signal to start! Thanks.",
+			"date": "Feb. 5, 2010",
+			"type": "company",
+			
 			"effect_script": ""
 		}
 	]
