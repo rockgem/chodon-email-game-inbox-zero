@@ -53,11 +53,11 @@ size_flags_horizontal = 3
 mouse_default_cursor_shape = 2
 text = "Sent"
 
-[node name="Drafts" type="Button" parent="InboxPanel/HBoxContainer"]
+[node name="Deleted" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_default_cursor_shape = 2
-text = "Drafts"
+text = "Deleted"
 
 [node name="Panel" type="Panel" parent="InboxPanel"]
 layout_mode = 1
