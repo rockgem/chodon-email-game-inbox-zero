@@ -32,7 +32,11 @@ func refresh_emails_display():
 
 
 func load_day_emails():
-	emails = ManagerGame.emails_data['day_%s' % day]
+	var e = ManagerGame.emails_data['day_%s' % day]
+	e.reverse()
+	
+	for email in e:
+		emails.push_front(email)
 	
 	refresh_emails_display()
 
@@ -40,3 +44,11 @@ func load_day_emails():
 func on_pop_to_ui(instance):
 	
 	$Popup.add_child(instance)
+
+
+func _on_next_day_pressed() -> void:
+	day += 1
+	
+	load_day_emails()
+	
+	ManagerGame.next_day_activated.emit()

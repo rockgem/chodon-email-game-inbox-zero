@@ -7,8 +7,8 @@
 			"to_name": "Rock G.",
 			"subject": "Free Cats (URGENT)",
 			"body": "Dear Human, My 27 cats have unionized and demand more treats. I need to rehome them ASAP. They’re fluent in Morse code and hate Mondays. Please adopt at least five. No returns. — Desperately Yours, Linda",
-			"date": "2/1/10",
-			"type": "",
+			"date": "Feb 2, 2010",
+			"type": "etc",
 			"responses": ["Ignore", "Reply", "Delete"],
 			"effect_script": ""
 		},
@@ -19,8 +19,8 @@
 			"to_name": "Rock G.",
 			"subject": "Quest Invitation: The Orb of Eternity",
 			"body": "Brave Adventurer, The Guild of Arcane Light needs YOU to retrieve the stolen Orb from the Lich King’s fortress. Reward: 10,000 gold + immortality (terms apply). Reply ‘YES’ to accept. Warning: May involve dragons.",
-			"date": "2/1/10",
-			"type": "",
+			"date": "Feb 2, 2010",
+			"type": "etc",
 			"responses": ["Ignore", "Reply", "Delete"],
 			"effect_script": ""
 		},
@@ -31,13 +31,170 @@
 			"to_name": "Rock G.",
 			"subject": "Mandatory Meeting: Project Brainstorming",
 			"body": "You are invited to the meeting this 2PM, located in the southwing building hall 4H 21st floor.",
-			"date": "2/1/10",
+			"date": "Feb 2, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Report on missing lunch",
+			"body": "An employee has reported that someone has been stealing their sandwich, they have approached the HR and requested whoever is stealing their tuna sandwich with spicy garlic sauce to stop what they are doing!",
+			"date": "Feb 2, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Free Coffee Refills",
+			"body": "As a loving member of the company, we are happy to announce that a new benefit has been implemented, UNLIMITED coffee refills! now you can enjoy working more hours and make your overtime shifts a little bit easier.",
+			"date": "Feb. 2, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "A Warm Welcome!",
+			"body": "Coming from the HR, we are glad to have you on the company! We hope you get comfortable in your new working environment. A employee access ID card will be sent to you soon so you can be able to access the cafeteria.",
+			"date": "Feb. 2, 2010",
 			"type": "company",
 			"responses": ["Ignore", "Reply", "Delete"],
 			"effect_script": ""
 		}
 	],
 	"day_2": [
-		
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Daily Meeting Hall 4H",
+			"body": "We will be conducting our daily meetup at 2PM 21st floor, hall 4H, see you there.",
+			"date": "Feb. 3, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Zoom meeting regarding previous release",
+			"body": "It turns out that our previous release of our product had critical bugs that makes it unusable, all engineers are scheduled for a zoom meeting 8:00 PM.",
+			"date": "Feb. 3, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Concerns about code malpractice",
+			"body": "Some of our engineers in the team had pushed some code that are not compliant with our standards, please reply to this email if you have concerns about the rules thank you!",
+			"date": "Feb. 3, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "user1299092@hotmail.com",
+			"sender_name": "dream kidd 1992",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "They’re Watching",
+			"body": "I found your email carved into my wall this morning. You need to leave town NOW. The shadows aren’t shadows. Don’t trust the man with no face. Burn this message.— [REDACTED]",
+			"date": "Feb. 3, 2010",
+			"type": "etc",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Spam Emails",
+			"body": "Spam e-mails has been much of a concern lately, it started around last week and nobody knows how spammers got the company's personal emails. Please be careful in reading and interacting with such spams as it may cause trouble.",
+			"date": "Feb. 3, 2010",
+			"type": "etc",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		}
+	],
+	"day_3": [
+		{
+			"sender_email": "republicoftoasters@hotmail.com",
+			"sender_name": "R.O.T. Inc.",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Your Toaster Warranty Expires Soon",
+			"body": "Hi, This is your final warning! Your toaster (model: TX-9000) will self-destruct in 24 hours unless you renew its warranty. Click here to pay $999.99. Seriously, it’s flammable.",
+			"date": "Feb. 4, 2010",
+			"type": "etc",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "user444777@gmail.com",
+			"sender_name": "nick",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Earthling, We Need Your Help",
+			"body": "Greetings! We are the Zorblaxians. Our spaceship crashed in your ‘Nevada Desert.’ Can you bring us 3 AAA batteries and a lasagna? Do not alert your ‘government.’ Thank you. — Glorp (Sent via iPhone 27)",
+			"date": "Feb. 4, 2010",
+			"type": "etc",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "sheenajane@companyhr.com",
+			"sender_name": "Sheena Jane Andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Daily Meeting Hall 4H Room 6th",
+			"body": "Daily meeting conducting at 2PM, 21st floor. See you there!",
+			"date": "Feb. 4, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "sheena666@gmail.com",
+			"sender_name": "sheena jane andres",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "Daily Meeting at 31st floor Room 13th",
+			"body": "You must come to room 13th on the 31st floor at exactly 4:16PM. You must come alone. DO NOT bring anyone else.",
+			"date": "Feb. 4, 2010",
+			"type": "etc",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		},
+		{
+			"sender_email": "diego@companyhr.com",
+			"sender_name": "Diego Sanchez",
+			"to": "rock@gmail.com",
+			"to_name": "Rock G.",
+			"subject": "BEWARE OF FAKE E-MAILS!",
+			"body": "[NOTICE] It has come to our attention that fake emails has been sent to almost all of our employees, please be aware and read the sender's e-mail address carefully before interacting with such potentially harmful letters.",
+			"date": "Feb. 4, 2010",
+			"type": "company",
+			"responses": ["Ignore", "Reply", "Delete"],
+			"effect_script": ""
+		}
 	]
 }

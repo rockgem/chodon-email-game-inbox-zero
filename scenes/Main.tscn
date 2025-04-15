@@ -1,10 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxgwfsnvwuvui"]
+[gd_scene load_steps=8 format=3 uid="uid://dxgwfsnvwuvui"]
 
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
+[ext_resource type="Texture2D" uid="uid://dayb7oguw87oj" path="res://art/Windows_Icons.png" id="3_c01mt"]
 [ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="3_rarhs"]
-[ext_resource type="PackedScene" uid="uid://bamvgem051wi0" path="res://actors/ui/PreviewBox.tscn" id="4_c01mt"]
 [ext_resource type="Texture2D" uid="uid://ctloil85gcweg" path="res://art/Windows_Progress_Fill.png" id="4_vcsgt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxtc6"]
+atlas = ExtResource("3_c01mt")
+region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nxtc6"]
 texture = ExtResource("4_vcsgt")
@@ -31,15 +35,28 @@ layout_mode = 1
 offset_left = 33.0
 offset_top = 24.0
 offset_right = 453.0
-offset_bottom = 441.0
+offset_bottom = 428.0
 theme_override_styles/panel = ExtResource("2_rvslj")
+
+[node name="Close" type="Button" parent="InboxPanel"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -34.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = 34.0
+grow_horizontal = 0
+icon = SubResource("AtlasTexture_nxtc6")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="InboxPanel"]
 layout_mode = 0
 offset_left = 17.0
-offset_top = 39.0
+offset_top = 52.0
 offset_right = 335.0
-offset_bottom = 79.0
+offset_bottom = 92.0
 
 [node name="Inbox" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2
@@ -66,7 +83,7 @@ anchor_top = 0.206
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 16.0
-offset_top = 10.098
+offset_top = 25.098
 offset_right = -16.0
 offset_bottom = -15.0
 grow_horizontal = 2
@@ -89,21 +106,6 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 10
-
-[node name="PreviewBox" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
-layout_mode = 2
-
-[node name="PreviewBox2" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
-layout_mode = 2
-
-[node name="PreviewBox3" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
-layout_mode = 2
-
-[node name="PreviewBox4" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
-layout_mode = 2
-
-[node name="PreviewBox5" parent="InboxPanel/Panel/ScrollContainer/List" instance=ExtResource("4_c01mt")]
-layout_mode = 2
 
 [node name="Stats" type="Panel" parent="."]
 layout_mode = 1
@@ -158,3 +160,18 @@ size_flags_vertical = 4
 theme_override_styles/background = ExtResource("3_rarhs")
 theme_override_styles/fill = SubResource("StyleBoxTexture_nxtc6")
 show_percentage = false
+
+[node name="NextDay" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -151.0
+offset_top = -54.0
+offset_right = -19.0
+offset_bottom = -14.0
+text = "Log Out"
+
+[connection signal="pressed" from="NextDay" to="." method="_on_next_day_pressed"]

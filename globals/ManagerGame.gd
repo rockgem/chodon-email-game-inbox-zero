@@ -3,6 +3,7 @@ extends Node
 
 signal pop_to_ui(instance)
 signal email_viewed(data)
+signal next_day_activated
 
 var emails_data = {}
 
