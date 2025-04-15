@@ -5,7 +5,7 @@ var data = {}
 
 
 func _ready() -> void:
-	$Panel/Panel/Subject.text = data['subject']
+	$Panel/Panel/HBoxContainer/Subject.text = data['subject']
 	$Panel/Panel/Date.text = data['date']
 	$Panel/Panel/From.text = 'From: %s %s' % [data['sender_name'], data['sender_email']]
 	$Panel/Panel/To.text = 'To: %s %s' % [data['to_name'], data['to']]
