@@ -15,6 +15,9 @@ func _ready() -> void:
 func _on_delete_pressed() -> void:
 	data['status'] = 'deleted'
 	
+	var i = load('res://actors/ui/MessageDeletedPopup.tscn').instantiate()
+	ManagerGame.pop_to_ui.emit(i)
+	
 	queue_free()
 
 
