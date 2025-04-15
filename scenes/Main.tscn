@@ -1,16 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxgwfsnvwuvui"]
+[gd_scene load_steps=6 format=3 uid="uid://dxgwfsnvwuvui"]
 
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
-[ext_resource type="Texture2D" uid="uid://blwkq3rwgmnx4" path="res://art/Windows_Toggle_Active.png" id="3_rarhs"]
+[ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="3_rarhs"]
 [ext_resource type="Texture2D" uid="uid://ctloil85gcweg" path="res://art/Windows_Progress_Fill.png" id="4_vcsgt"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c01mt"]
-texture = ExtResource("3_rarhs")
-texture_margin_left = 2.0
-texture_margin_top = 2.0
-texture_margin_right = 2.0
-texture_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nxtc6"]
 texture = ExtResource("4_vcsgt")
@@ -95,7 +88,7 @@ custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_styles/background = SubResource("StyleBoxTexture_c01mt")
+theme_override_styles/background = ExtResource("3_rarhs")
 theme_override_styles/fill = SubResource("StyleBoxTexture_nxtc6")
 value = 40.0
 show_percentage = false
@@ -113,7 +106,7 @@ custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_styles/background = SubResource("StyleBoxTexture_c01mt")
+theme_override_styles/background = ExtResource("3_rarhs")
 theme_override_styles/fill = SubResource("StyleBoxTexture_nxtc6")
 value = 40.0
 show_percentage = false

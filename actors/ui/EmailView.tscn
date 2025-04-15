@@ -1,0 +1,109 @@
+[gd_scene load_steps=3 format=3 uid="uid://571oabxo11p5"]
+
+[ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="1_magnw"]
+[ext_resource type="FontFile" uid="uid://dnwcl27frp64j" path="res://reso/styles/IBMPlexMono-Bold.ttf" id="2_gvcuj"]
+
+[node name="EmailView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 118.0
+offset_right = 802.0
+offset_bottom = 522.0
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 18.0
+offset_top = 90.0
+offset_right = -18.0
+offset_bottom = 309.0
+theme_override_styles/panel = ExtResource("1_magnw")
+
+[node name="From" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 8.0
+offset_right = 136.0
+offset_bottom = 25.0
+text = "From: Evil G synipsis@gmail.com"
+
+[node name="Subject" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -53.0
+offset_right = 231.0
+offset_bottom = -34.0
+theme_override_fonts/font = ExtResource("2_gvcuj")
+theme_override_font_sizes/font_size = 14
+text = "HR Meeting for more smiling"
+
+[node name="Date" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -32.0
+offset_right = 231.0
+offset_bottom = -13.0
+text = "Jan. 13, 2010"
+
+[node name="To" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 25.0
+offset_right = 136.0
+offset_bottom = 42.0
+text = "To: Evil G rockgementiza@gmail.com"
+
+[node name="Body" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 56.0
+offset_right = 396.0
+offset_bottom = 193.0
+text = "Good day, We are a group of researcchers trying to find a cure for cancer, if you have any information please contact us +63 994 744 0054
+
+- Kevin from horsemeat.com"
+autowrap_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -61.0
+offset_right = 190.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Reply" type="Button" parent="Panel/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Reply"
+
+[node name="Ignore" type="Button" parent="Panel/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ignore"
+
+[node name="Accept" type="Button" parent="Panel/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accept"
+
+[node name="Delete" type="Button" parent="Panel/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Delete"

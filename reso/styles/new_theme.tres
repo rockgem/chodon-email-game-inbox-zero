@@ -1,8 +1,9 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bgmbdw1tx5p6x"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bgmbdw1tx5p6x"]
 
 [ext_resource type="Texture2D" uid="uid://dj4nhnsufjfis" path="res://art/Windows_Button_Focus.png" id="1_1ecnm"]
 [ext_resource type="FontFile" uid="uid://dhdcmb32nhaep" path="res://reso/styles/IBMPlexMono-Regular.ttf" id="1_6osw1"]
 [ext_resource type="Texture2D" uid="uid://c5cbkm3bwmvbb" path="res://art/Windows_Button.png" id="2_luwfl"]
+[ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="3_luwfl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k7pos"]
 texture = ExtResource("1_1ecnm")
@@ -36,3 +37,4 @@ Button/styles/normal_mirrored = null
 Button/styles/pressed = null
 Button/styles/pressed_mirrored = null
 Label/colors/font_color = Color(0.203922, 0.203922, 0.203922, 1)
+Panel/styles/panel = ExtResource("3_luwfl")
