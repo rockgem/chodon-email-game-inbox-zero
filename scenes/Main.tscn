@@ -84,7 +84,7 @@ offset_bottom = 92.0
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_default_cursor_shape = 2
-text = "Inbox"
+text = "Inbox (10)"
 
 [node name="Sent" type="Button" parent="InboxPanel/HBoxContainer"]
 layout_mode = 2

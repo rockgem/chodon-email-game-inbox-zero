@@ -1,7 +1,7 @@
 extends Control
 
 
-var day = 7
+var day = 1
 var emails = []
 
 var job_security = 100.0
@@ -9,10 +9,12 @@ var sanity = 100.0
 
 func _ready() -> void:
 	ManagerGame.pop_to_ui.connect(on_pop_to_ui)
+	ManagerGame.email_viewed.connect(on_email_viewed)
 	
 	ManagerGame.global_main_ref = self
 	
 	load_day_emails()
+	on_email_viewed(null)
 
 
 func _physics_process(delta: float) -> void:
@@ -46,6 +48,15 @@ func load_day_emails():
 func on_pop_to_ui(instance):
 	
 	$Popup.add_child(instance)
+
+
+func on_email_viewed(data):
+	var new_emails = 0
+	for e in emails:
+		if e.has('is_viewed') == false:
+			new_emails += 1
+	
+	$InboxPanel/HBoxContainer/Inbox.text = 'Inbox (%s)' % new_emails
 
 
 func _on_next_day_pressed() -> void:
