@@ -44,6 +44,7 @@ offset_top = 12.0
 offset_right = -12.0
 offset_bottom = 34.0
 grow_horizontal = 0
+mouse_default_cursor_shape = 2
 icon = SubResource("AtlasTexture_ukr72")
 
 [node name="Panel" type="Panel" parent="Panel"]
@@ -127,12 +128,14 @@ alignment = 1
 [node name="Reply" type="Button" parent="Panel/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 mouse_default_cursor_shape = 2
 text = "Reply"
 
 [node name="Ignore" type="Button" parent="Panel/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 mouse_default_cursor_shape = 2
 text = "Ignore"
 
@@ -140,14 +143,17 @@ text = "Ignore"
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 text = "Accept"
 
 [node name="Delete" type="Button" parent="Panel/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 mouse_default_cursor_shape = 2
 text = "Delete"
 
+[connection signal="pressed" from="Panel/Close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="Panel/Buttons/Reply" to="." method="_on_reply_pressed"]
 [connection signal="pressed" from="Panel/Buttons/Ignore" to="." method="_on_ignore_pressed"]
 [connection signal="pressed" from="Panel/Buttons/Delete" to="." method="_on_delete_pressed"]

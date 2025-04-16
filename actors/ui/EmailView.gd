@@ -10,6 +10,10 @@ func _ready() -> void:
 	$Panel/Panel/From.text = 'From: %s %s' % [data['sender_name'], data['sender_email']]
 	$Panel/Panel/To.text = 'To: %s %s' % [data['to_name'], data['to']]
 	$Panel/Panel/Body.text = '%s' % data['body']
+	
+	if data.has('status'):
+		for b in $Panel/Buttons.get_children():
+			b.disabled = true
 
 
 # this function handles the stat change and handles the script loading of specific effects
@@ -30,10 +34,10 @@ func execute_flag(flag_id: String):
 					# adding them for the next day, so we run this function to refresh the emails being displayed
 					ManagerGame.global_main_ref.refresh_emails_display()
 					
-				'add_sanity': ManagerGame.global_main_ref.sanity += 5
-				'reduce_sanity': ManagerGame.global_main_ref.sanity -= 5
-				'add_security': ManagerGame.global_main_ref.job_security += 5
-				'reduce_security': ManagerGame.global_main_ref.job_security -= 5
+				'add_sanity': ManagerGame.global_main_ref.sanity += 10
+				'reduce_sanity': ManagerGame.global_main_ref.sanity -= 10
+				'add_security': ManagerGame.global_main_ref.job_security += 10
+				'reduce_security': ManagerGame.global_main_ref.job_security -= 10
 
 
 func _on_delete_pressed() -> void:
@@ -60,4 +64,8 @@ func _on_reply_pressed() -> void:
 	
 	execute_flag('on_reply')
 	
+	queue_free()
+
+
+func _on_close_pressed() -> void:
 	queue_free()

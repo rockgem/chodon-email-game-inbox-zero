@@ -1,9 +1,17 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bgmbdw1tx5p6x"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://bgmbdw1tx5p6x"]
 
 [ext_resource type="Texture2D" uid="uid://dj4nhnsufjfis" path="res://art/Windows_Button_Focus.png" id="1_1ecnm"]
 [ext_resource type="FontFile" uid="uid://dhdcmb32nhaep" path="res://reso/styles/IBMPlexMono-Regular.ttf" id="1_6osw1"]
+[ext_resource type="Texture2D" uid="uid://kwpahgutmixe" path="res://art/Windows_Button_Pressed.png" id="1_k7pos"]
 [ext_resource type="Texture2D" uid="uid://c5cbkm3bwmvbb" path="res://art/Windows_Button.png" id="2_luwfl"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="3_luwfl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6k0pw"]
+texture = ExtResource("1_k7pos")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k7pos"]
 texture = ExtResource("1_1ecnm")
@@ -23,10 +31,11 @@ texture_margin_bottom = 3.0
 default_font = ExtResource("1_6osw1")
 default_font_size = 12
 Button/colors/font_color = Color(0.205118, 0.205117, 0.205117, 1)
+Button/colors/font_disabled_color = Color(0.366595, 0.366595, 0.366595, 1)
 Button/colors/font_focus_color = Color(0.203922, 0.203922, 0.203922, 1)
 Button/colors/font_hover_color = Color(0.203922, 0.203922, 0.203922, 1)
 Button/colors/font_pressed_color = Color(0.203922, 0.203922, 0.203922, 1)
-Button/styles/disabled = null
+Button/styles/disabled = SubResource("StyleBoxTexture_6k0pw")
 Button/styles/focus = SubResource("StyleBoxTexture_k7pos")
 Button/styles/hover = SubResource("StyleBoxTexture_rarhs")
 Button/styles/hover_mirrored = null
