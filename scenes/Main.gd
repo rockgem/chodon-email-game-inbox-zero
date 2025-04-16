@@ -27,12 +27,23 @@ func refresh_emails_display():
 		child.queue_free()
 	
 	for email in emails:
-		var i = load('res://actors/ui/PreviewBox.tscn').instantiate()
-		i.data = email
-		i.get_node('SenderName').text = email['sender_name']
-		i.get_node('Body').text = email['body']
-		
-		$InboxPanel/Panel/ScrollContainer/List.add_child(i)
+		# if data has no "status" value in json, it means its new and wasn'nt interacted yet
+		if email.has('status') == false:
+			var i = load('res://actors/ui/PreviewBox.tscn').instantiate()
+			i.data = email
+			i.get_node('SenderName').text = email['sender_name']
+			i.get_node('Body').text = email['body']
+			
+			$InboxPanel/Panel/ScrollContainer/List.add_child(i)
+		else:
+			# checks if the message was interacted but only display the ones that were not deleted
+			if email['status'] != 'deleted':
+				var i = load('res://actors/ui/PreviewBox.tscn').instantiate()
+				i.data = email
+				i.get_node('SenderName').text = email['sender_name']
+				i.get_node('Body').text = email['body']
+				
+				$InboxPanel/Panel/ScrollContainer/List.add_child(i)
 
 
 func load_day_emails():
@@ -62,6 +73,8 @@ func on_email_viewed(data):
 
 
 func on_email_deleted(data):
+	refresh_emails_display()
+	
 	var deleted = 0
 	for e in emails:
 		if e.has('status'):
@@ -77,3 +90,22 @@ func _on_next_day_pressed() -> void:
 	load_day_emails()
 	
 	ManagerGame.next_day_activated.emit()
+
+
+func _on_inbox_pressed() -> void:
+	refresh_emails_display()
+
+
+func _on_deleted_pressed() -> void:
+	for child in $InboxPanel/Panel/ScrollContainer/List.get_children():
+		child.queue_free()
+	
+	for email in emails:
+		if email.has('status'):
+			if email['status'] == 'deleted':
+				var i = load('res://actors/ui/PreviewBox.tscn').instantiate()
+				i.data = email
+				i.get_node('SenderName').text = email['sender_name']
+				i.get_node('Body').text = email['body']
+				
+				$InboxPanel/Panel/ScrollContainer/List.add_child(i)

@@ -208,4 +208,6 @@ grow_vertical = 0
 mouse_default_cursor_shape = 2
 text = "Log Out"
 
+[connection signal="pressed" from="InboxPanel/HBoxContainer/Inbox" to="." method="_on_inbox_pressed"]
+[connection signal="pressed" from="InboxPanel/HBoxContainer/Deleted" to="." method="_on_deleted_pressed"]
 [connection signal="pressed" from="NextDay" to="." method="_on_next_day_pressed"]
