@@ -1,7 +1,7 @@
 extends Control
 
 
-var day = 1
+var day = 7
 var emails = []
 
 var job_security = 100.0

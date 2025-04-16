@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxgwfsnvwuvui"]
+[gd_scene load_steps=9 format=3 uid="uid://dxgwfsnvwuvui"]
 
 [ext_resource type="Script" uid="uid://c8k166l7djdna" path="res://scenes/Main.gd" id="1_elqb8"]
+[ext_resource type="Texture2D" uid="uid://crmwxc5n7v2wf" path="res://art/wp2754931.jpg" id="2_c01mt"]
 [ext_resource type="StyleBox" uid="uid://dgm32v3ihwqik" path="res://reso/styles/panel.tres" id="2_rvslj"]
 [ext_resource type="Texture2D" uid="uid://dayb7oguw87oj" path="res://art/Windows_Icons.png" id="3_c01mt"]
 [ext_resource type="StyleBox" uid="uid://dgptrjwhojkdi" path="res://reso/styles/panel_textbox.tres" id="3_rarhs"]
@@ -26,6 +27,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_elqb8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_c01mt")
+expand_mode = 3
+stretch_mode = 5
 
 [node name="Popup" type="CanvasLayer" parent="."]
 layer = 102
