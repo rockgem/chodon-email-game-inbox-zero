@@ -34,10 +34,10 @@ func execute_flag(flag_id: String):
 					# adding them for the next day, so we run this function to refresh the emails being displayed
 					ManagerGame.global_main_ref.refresh_emails_display()
 					
-				'add_sanity': ManagerGame.global_main_ref.sanity += 10
-				'reduce_sanity': ManagerGame.global_main_ref.sanity -= 10
-				'add_security': ManagerGame.global_main_ref.job_security += 10
-				'reduce_security': ManagerGame.global_main_ref.job_security -= 10
+				'add_sanity': ManagerGame.global_main_ref.sanity = clamp(ManagerGame.global_main_ref.sanity + 10, 0, 100)
+				'reduce_sanity': ManagerGame.global_main_ref.sanity = clamp(ManagerGame.global_main_ref.sanity - 10, 0, 100)
+				'add_security': ManagerGame.global_main_ref.job_security = clamp(ManagerGame.global_main_ref.job_security + 10, 0, 100)
+				'reduce_security': ManagerGame.global_main_ref.job_security = clamp(ManagerGame.global_main_ref.job_security - 10, 0, 100)
 
 
 func _on_delete_pressed() -> void:
