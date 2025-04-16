@@ -22,10 +22,14 @@ func execute_flag(flag_id: String):
 				'run_script':
 					# a run_script flag expects a parameter which is the path to the script
 					# in this case, its in the array index 1
+					# see scripts example located in folder reso/action_scripts/
 					var sc = load(data[flag_id][1]).instantiate()
 					add_child(sc)
 					
+					# most run_script tags are just scripts where we add new emails immediately, or
+					# adding them for the next day, so we run this function to refresh the emails being displayed
 					ManagerGame.global_main_ref.refresh_emails_display()
+					
 				'add_sanity': ManagerGame.global_main_ref.sanity += 5
 				'reduce_sanity': ManagerGame.global_main_ref.sanity -= 5
 				'add_security': ManagerGame.global_main_ref.job_security += 5
