@@ -10,6 +10,7 @@ var sanity = 100.0
 func _ready() -> void:
 	ManagerGame.pop_to_ui.connect(on_pop_to_ui)
 	ManagerGame.email_viewed.connect(on_email_viewed)
+	ManagerGame.email_deleted.connect(on_email_deleted)
 	
 	ManagerGame.global_main_ref = self
 	
@@ -58,6 +59,16 @@ func on_email_viewed(data):
 			new_emails += 1
 	
 	$InboxPanel/HBoxContainer/Inbox.text = 'Inbox (%s)' % new_emails
+
+
+func on_email_deleted(data):
+	var deleted = 0
+	for e in emails:
+		if e.has('status'):
+			if e['status'] == 'deleted':
+				deleted += 1
+	
+	$InboxPanel/HBoxContainer/Deleted.text = 'Deleted (%s)' % deleted
 
 
 func _on_next_day_pressed() -> void:

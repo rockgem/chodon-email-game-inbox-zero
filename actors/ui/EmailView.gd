@@ -48,6 +48,8 @@ func _on_delete_pressed() -> void:
 	var i = load('res://actors/ui/MessageDeletedPopup.tscn').instantiate()
 	ManagerGame.pop_to_ui.emit(i)
 	
+	ManagerGame.email_deleted.emit(data)
+	
 	queue_free()
 
 
