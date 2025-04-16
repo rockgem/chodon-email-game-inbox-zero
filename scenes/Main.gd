@@ -14,7 +14,6 @@ func _ready() -> void:
 	ManagerGame.global_main_ref = self
 	
 	load_day_emails()
-	on_email_viewed(null)
 
 
 func _physics_process(delta: float) -> void:
@@ -43,6 +42,8 @@ func load_day_emails():
 		emails.push_front(email)
 	
 	refresh_emails_display()
+	
+	on_email_viewed(null)
 
 
 func on_pop_to_ui(instance):
