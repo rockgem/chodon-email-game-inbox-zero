@@ -39,6 +39,7 @@ offset_bottom = 428.0
 theme_override_styles/panel = ExtResource("2_rvslj")
 
 [node name="Label2" type="Label" parent="InboxPanel"]
+layout_mode = 0
 offset_left = 13.0
 offset_top = 13.0
 offset_right = 122.0
@@ -124,6 +125,7 @@ offset_bottom = 116.0
 theme_override_styles/panel = ExtResource("2_rvslj")
 
 [node name="Label2" type="Label" parent="Stats"]
+layout_mode = 0
 offset_left = 11.0
 offset_top = 7.0
 offset_right = 120.0
