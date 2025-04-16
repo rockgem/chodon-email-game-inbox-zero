@@ -85,6 +85,10 @@ func on_email_deleted(data):
 
 
 func _on_next_day_pressed() -> void:
+	ManagerGame.fade_in()
+	await ManagerGame.transition_step_finished
+	#ManagerGame.fade_out()
+	
 	day += 1
 	
 	load_day_emails()
