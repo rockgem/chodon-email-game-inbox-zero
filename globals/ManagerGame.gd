@@ -16,6 +16,15 @@ func _ready() -> void:
 	emails_data = get_data("res://reso/data/emails.json")
 
 
+func run_action_script(path):
+	var sc = load(path).instantiate()
+	add_child(sc)
+	
+	# most run_script tags are just scripts where we add new emails immediately, or
+	# adding them for the next day, so we run this function to refresh the emails being displayed
+	global_main_ref.refresh_emails_display()
+
+
 func get_data(path):
 	var f = FileAccess.open(path, FileAccess.READ)
 	var j = JSON.new()

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ooannhoum2uo"]
+
+[ext_resource type="Script" uid="uid://cpqejo175aas1" path="res://reso/action_scripts/HrWarningIgnoringCoWorkers.gd" id="1_k5hg0"]
+
+[node name="HrWarningIgnoringCoWorkers" type="Node"]
+script = ExtResource("1_k5hg0")

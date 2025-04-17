@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://chh5wnjc0t4hw"]
+
+[ext_resource type="Script" uid="uid://m643f5nosqf3" path="res://reso/action_scripts/HrIgnoringImportantEmails.gd" id="1_km25m"]
+
+[node name="HrIgnoringImportantEmails" type="Node"]
+script = ExtResource("1_km25m")

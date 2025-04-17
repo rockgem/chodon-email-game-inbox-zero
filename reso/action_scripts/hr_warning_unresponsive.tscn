@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckgro7alee543"]
+
+[ext_resource type="Script" uid="uid://d1mylr33rktp1" path="res://reso/action_scripts/HrWarningUnresponsive.gd" id="1_wlaer"]
+
+[node name="HrWarningUnresponsive" type="Node"]
+script = ExtResource("1_wlaer")

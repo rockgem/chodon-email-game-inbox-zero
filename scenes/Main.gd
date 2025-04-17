@@ -1,8 +1,14 @@
 extends Control
 
 
-var day = 1
+var day = 4
 var emails = []
+
+var ignored_work_letters = 0
+var ignored_hr_letters = 0
+var ignored_important_letters = 0
+var replied_personal_letters = 0
+var replied_phishing_letters = 0
 
 var job_security = 100.0
 var sanity = 100.0
@@ -47,6 +53,24 @@ func refresh_emails_display():
 
 
 func load_day_emails():
+	# check for ignored emails --------------
+	
+	# check if hr has been ignored n times, run an action script after
+	if ignored_hr_letters >= 6:
+		ManagerGame.run_action_script("res://reso/action_scripts/hr_warning_unresponsive.tscn")
+		
+		$NextDay.hide()
+	if ignored_work_letters >= 10:
+		ManagerGame.run_action_script("res://reso/action_scripts/HRWarningIgnoringCoWorkers.tscn")
+	if replied_personal_letters >= 10:
+		pass
+	if replied_phishing_letters >= 3:
+		pass
+	if ignored_important_letters >= 1:
+		ManagerGame.run_action_script("res://reso/action_scripts/HRIgnoringImportantEmails.tscn")
+	
+	# ----------------------------------------
+	
 	var e = ManagerGame.emails_data['day_%s' % day]
 	e.reverse()
 	
@@ -56,6 +80,11 @@ func load_day_emails():
 	refresh_emails_display()
 	
 	on_email_viewed(null)
+
+
+func game_over():
+	var i = load('res://actors/ui/GameOverView.tscn').instantiate()
+	ManagerGame.pop_to_ui.emit(i)
 
 
 func on_pop_to_ui(instance):
@@ -94,8 +123,7 @@ func _on_next_day_pressed() -> void:
 	
 	# check days
 	if day > ManagerGame.emails_data.size():
-		var i = load('res://actors/ui/GameOverView.tscn').instantiate()
-		ManagerGame.pop_to_ui.emit(i)
+		game_over()
 		return
 	
 	#ManagerGame.fade_out()
