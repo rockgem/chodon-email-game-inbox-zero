@@ -50,6 +50,8 @@ func _on_delete_pressed() -> void:
 	
 	ManagerGame.email_deleted.emit(data)
 	
+	Sfx.play_sound('Click')
+	
 	queue_free()
 
 
@@ -57,6 +59,8 @@ func _on_ignore_pressed() -> void:
 	data['status'] = 'ignored'
 	
 	execute_flag('on_ignore')
+	
+	Sfx.play_sound('Click')
 	
 	queue_free()
 
@@ -66,8 +70,12 @@ func _on_reply_pressed() -> void:
 	
 	execute_flag('on_reply')
 	
+	Sfx.play_sound('Click')
+	
 	queue_free()
 
 
 func _on_close_pressed() -> void:
+	Sfx.play_sound('Click')
+	
 	queue_free()

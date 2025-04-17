@@ -85,6 +85,8 @@ func on_email_deleted(data):
 
 
 func _on_next_day_pressed() -> void:
+	Sfx.play_sound('Click')
+	
 	ManagerGame.fade_in()
 	await ManagerGame.transition_step_finished
 	#ManagerGame.fade_out()
@@ -97,10 +99,14 @@ func _on_next_day_pressed() -> void:
 
 
 func _on_inbox_pressed() -> void:
+	Sfx.play_sound('Click')
+	
 	refresh_emails_display()
 
 
 func _on_deleted_pressed() -> void:
+	Sfx.play_sound('Click')
+	
 	for child in $InboxPanel/Panel/ScrollContainer/List.get_children():
 		child.queue_free()
 	
