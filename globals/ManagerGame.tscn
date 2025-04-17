@@ -27,7 +27,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Transition" type="CanvasLayer" parent="."]
-layer = 102
+layer = 105
 visible = false
 
 [node name="Control" type="Control" parent="Transition"]

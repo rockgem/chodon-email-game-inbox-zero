@@ -85,13 +85,20 @@ func on_email_deleted(data):
 
 
 func _on_next_day_pressed() -> void:
+	day += 1
+	
 	Sfx.play_sound('Click')
 	
 	ManagerGame.fade_in()
 	await ManagerGame.transition_step_finished
-	#ManagerGame.fade_out()
 	
-	day += 1
+	# check days
+	if day > ManagerGame.emails_data.size():
+		var i = load('res://actors/ui/GameOverView.tscn').instantiate()
+		ManagerGame.pop_to_ui.emit(i)
+		return
+	
+	#ManagerGame.fade_out()
 	
 	load_day_emails()
 	
