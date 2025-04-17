@@ -51,6 +51,11 @@ func fade_in():
 	$Transition.visible = false
 
 
+func fade_in_with_text(text):
+	fade_in()
+	$Transition/Control/Label.text = text
+
+
 #func fade_out():
 	#$Transition.visible = true
 	#$Transition/Control.modulate.a = 1.0
